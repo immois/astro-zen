@@ -2,8 +2,10 @@
 import { SITE_CONTENT } from "@config";
 import Hero from "@components/Hero.astro";
 import Layout from "@layouts/Layout.astro";
+import Experience from "@components/Experience.astro";
 ---
 
 <Layout>
   <Hero {...SITE_CONTENT.hero} />
+  <Experience experience={SITE_CONTENT.experience} />
 </Layout>

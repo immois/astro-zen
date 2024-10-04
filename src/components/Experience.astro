@@ -1,0 +1,41 @@
+---
+import type { ExperienceProps } from "@types";
+import Section from "./Section.astro";
+
+interface Props {
+  experience: ExperienceProps[];
+}
+
+const { experience } = Astro.props;
+---
+
+<Section text="Work Experience" href="experience">
+  {
+    experience.map(({ company, position, startDate, endDate, summary }) => (
+      <div class="mb-10">
+        <h3 class="text-2xl font-serif font-semibold text-white mb-1.5">
+          {company}
+        </h3>
+        <div class="flex flex-col items-start pb-5">
+          <h4 class="text-2xl font-serif text-primary font-medium mb-0.5">
+            {position}
+          </h4>
+          <span class="text-sm text-white/70 pb-[2px]">
+            {startDate} — {endDate}
+          </span>
+        </div>
+        {Array.isArray(summary) ? (
+          <ul class="list-none">
+            {summary.map((log) => (
+              <li class="text-base relative text-neutral pl-8 mb-3 before:absolute before:left-0 before:top-1 before:content-[url(/check.svg)]">
+                {log}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-base text-neutral">{summary}</p>
+        )}
+      </div>
+    ))
+  }
+</Section>

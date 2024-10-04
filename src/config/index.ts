@@ -51,4 +51,23 @@ export const SITE_CONTENT: SiteContent = {
         "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
     },
   ],
+  projects: [
+    {
+      name: "Spotifu Music",
+      summary: "A music streaming app that emulates Spotify's core features.",
+      linkPreview: "/",
+      linkSource: "https://github.com/immois/astro-zen",
+      image: "/spotifu.png",
+    },
+    {
+      name: "Shopp App",
+      summary: "An e-commerce platform that replicates Shopify's key features.",
+      // tecnologies: [],
+      linkPreview: "/",
+      linkSource: "https://github.com/immois/astro-zen",
+      image: "/shopify-clon.png",
+    },
+  ],
 };
+
+// #5755ff

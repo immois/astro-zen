@@ -1,0 +1,29 @@
+---
+import type { HeaderProps } from "@types";
+type Props = HeaderProps;
+
+const { siteLogo, navLinks } = Astro.props;
+---
+
+<header class="max-w-5xl mx-auto flex justify-between px-5 py-6">
+  <a href="/" aria-label="Home link">
+    <img class="rounded-full size-11" src={siteLogo} alt="website logo" />
+  </a>
+
+  <nav class="text-neutral">
+    <ul class="flex gap-2">
+      {
+        navLinks.map((link) => (
+          <li class="relative">
+            <a
+              class={`font-medium text-sm p-2 block hover:text-primary`}
+              href={link.href}
+            >
+              {link.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

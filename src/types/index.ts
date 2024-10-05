@@ -2,6 +2,8 @@ export interface SiteConfig extends HeaderProps {
   title: string;
   description: string;
   lang: string;
+  author: string;
+  socialLinks: { text: string; href: string }[];
 }
 
 export interface SiteContent {

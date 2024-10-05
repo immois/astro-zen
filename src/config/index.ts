@@ -2,6 +2,7 @@ import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
   title: "Alejandro Múnez — Mobile & Web Developer",
+  author: "Alejandro Múnez Cuntez",
   description: "",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
@@ -9,6 +10,13 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
+  ],
+  socialLinks: [
+    { text: "Twitter", href: "" },
+    { text: "LinkedIn", href: "" },
+    { text: "Github", href: "" },
+    { text: "Youtube", href: "" },
+    { text: "Dribbble", href: "" },
   ],
 };
 

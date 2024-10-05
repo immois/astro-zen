@@ -1,0 +1,32 @@
+---
+import type { SiteConfig } from "@types";
+
+type Props = Pick<SiteConfig, "author" | "socialLinks">;
+
+const { author, socialLinks } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  class="text-white w-full text-center pb-8 pt-5 px-5 border-t border-neutral/20"
+>
+  <ul class="flex flex-wrap gap-x-5 justify-center mb-5 text-xs">
+    {
+      socialLinks.map(({ text, href }) => (
+        <li>
+          <a
+            href={href}
+            class="hover:text-primary inline-block py-3 px-4 after:relative after:bottom-[-4px] after:content-[url(/external.svg)]"
+          >
+            {text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="text-xs">
+    {author} © {currentYear}. <span class="text-neutral"
+      >Designed & Developed by</span
+    > Moisés Machuca
+  </p>
+</footer>

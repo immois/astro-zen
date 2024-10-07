@@ -6,18 +6,40 @@ import "@fontsource-variable/gabarito";
 import { SITE_CONFIG } from "@config";
 import Footer from "@components/Footer.astro";
 
-const { title, siteLogo, navLinks, lang, author, socialLinks } = SITE_CONFIG;
+const {
+  title,
+  description,
+  siteLogo,
+  navLinks,
+  lang,
+  author,
+  socialLinks,
+  socialImage,
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+} = SITE_CONFIG;
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImage} />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={socialImage} />
     <ViewTransitions />
   </head>
   <body class="font-sans bg-black">

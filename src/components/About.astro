@@ -1,6 +1,7 @@
 ---
-import type { AboutProps, HeroProps } from "@types";
 import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import type { AboutProps, HeroProps } from "@types";
 
 type Props = AboutProps & Pick<HeroProps, "name">;
 
@@ -13,7 +14,13 @@ const { description, image, name } = Astro.props;
     <div
       class="w-64 h-80 bg-white p-4 flex-shrink-0 rotate-[5deg] md:rotate-[7deg]"
     >
-      <img class="w-full object-cover" src={image} alt={name} />
+      <Image
+        class="object-cover"
+        src={image}
+        width="260"
+        height="260"
+        alt={name}
+      />
     </div>
   </div>
 </Section>

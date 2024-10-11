@@ -1,6 +1,7 @@
 ---
-import type { ProjectProps } from "@types";
 import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import type { ProjectProps } from "@types";
 
 interface Props {
   projects: ProjectProps[];
@@ -36,10 +37,12 @@ const { projects } = Astro.props;
           </div>
         </div>
         <div class="flex items-end">
-          <img
+          <Image
             class="w-full h-[85%] object-cover object-left-top md:rounded-ss-xl"
             src={image}
             alt={name}
+            width="560"
+            height="368"
           />
         </div>
       </div>

@@ -1,6 +1,8 @@
 ---
 import Menu from "@icons/Menu.astro";
+import { Image } from "astro:assets";
 import type { HeaderProps } from "@types";
+
 type Props = HeaderProps;
 
 const { siteLogo, navLinks } = Astro.props;
@@ -8,7 +10,13 @@ const { siteLogo, navLinks } = Astro.props;
 
 <header class="max-w-5xl mx-auto flex justify-between px-5 py-6 relative">
   <a href="/" aria-label="Home link">
-    <img class="rounded-full size-11" src={siteLogo} alt="website logo" />
+    <Image
+      class="rounded-full"
+      src={siteLogo}
+      width="45"
+      height="45"
+      alt="website logo"
+    />
   </a>
 
   <button

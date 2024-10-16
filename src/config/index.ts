@@ -20,7 +20,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "",
+  canonicalURL: "https://astro-zen.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
@@ -73,7 +73,6 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "Shopp App",
       summary: "An e-commerce platform that replicates Shopify's key features.",
-      // tecnologies: [],
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen",
       image: "/shopify-clon.png",

@@ -35,6 +35,15 @@ export default {
         white: "#E2E8F0",
         black: "#0E141B",
       },
+      keyframes: {
+        slideIn: {
+          "10%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 600ms ease both",
+      },
     },
   },
   plugins: [],

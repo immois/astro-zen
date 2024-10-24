@@ -8,7 +8,9 @@ type Props = HeaderProps;
 const { siteLogo, navLinks } = Astro.props;
 ---
 
-<header class="max-w-5xl mx-auto flex justify-between px-5 py-6 relative">
+<header
+  class="max-w-5xl mx-auto flex justify-between px-5 py-6 top-0 z-50 sticky bg-black animate-slideIn"
+>
   <a href="/" aria-label="Home link">
     <Image
       class="rounded-full"
@@ -66,3 +68,10 @@ const { siteLogo, navLinks } = Astro.props;
     item?.addEventListener("click", toggleMenu);
   });
 </script>
+
+<style>
+  header {
+    animation-timeline: scroll();
+    animation-range: 0 650px;
+  }
+</style>

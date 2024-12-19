@@ -40,7 +40,7 @@ const { siteLogo, navLinks } = Astro.props;
         navLinks.map((link) => (
           <li class="relative">
             <a
-              class={`font-medium text-sm p-2 block hover:text-primary nav-item`}
+              class={`font-medium text-sm p-2 block hover:text-white duration-500 transition-all nav-item relative after:absolute after:opacity-0 after:content-['•'] after:w-1 after:h-2 after:bottom-0 after:left-2/4 after:-translate-x-2/4  after:text-primary`}
               href={link.href}
             >
               {link.text}
@@ -53,9 +53,10 @@ const { siteLogo, navLinks } = Astro.props;
 </header>
 
 <script>
+  // Toggle mobile menu
   const button = document.querySelector("#menu-button");
   const menu = document.querySelector("#main-menu");
-  const navItems = document.querySelectorAll("#main-menu > ul > li");
+  const navItems = document.querySelectorAll("#main-menu > ul > li > a");
 
   const toggleMenu = () => {
     menu?.classList.toggle("hidden");
@@ -67,6 +68,39 @@ const { siteLogo, navLinks } = Astro.props;
   navItems.forEach((item) => {
     item?.addEventListener("click", toggleMenu);
   });
+
+  // Update navigation based on scroll position with Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("href") === `#${entry.target.id}`) {
+              item.classList.add("text-white", "md:after:opacity-100");
+            } else {
+              item.classList.remove("text-white", "md:after:opacity-100");
+            }
+          });
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  document.querySelectorAll("section").forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Cleanup observer
+  document.onvisibilitychange = () => {
+    if (document.visibilityState === "hidden") {
+      observer.disconnect();
+    } else {
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
+    }
+  };
 </script>
 
 <style>

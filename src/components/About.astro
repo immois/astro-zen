@@ -9,10 +9,10 @@ const { description, image, name } = Astro.props;
 ---
 
 <Section text="About Me" href="about">
-  <div class="flex gap-12 md:gap-8 flex-col items-center md:flex-row">
-    <p class="text-neutral w-auto text-base md:pr-5">{description}</p>
+  <div class="flex flex-col items-center gap-12 md:flex-row md:gap-8">
+    <p class="w-auto text-base text-neutral md:pr-5">{description}</p>
     <div
-      class="w-64 h-80 bg-white p-4 flex-shrink-0 rotate-[5deg] md:rotate-[7deg]"
+      class="h-80 w-64 flex-shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg]"
     >
       <Image
         class="object-cover"

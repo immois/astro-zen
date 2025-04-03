@@ -7,21 +7,21 @@ const { name, specialty, summary, email } = Astro.props;
 
 <section class="py-24 md:py-32" id="#hero">
   <h1
-    class="text-7xl font-serif mb-1.5 sm:text-8xl md:text-9xl md:mb-0 text-white font-bold tracking-tightest"
+    class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
   >
     {name}
   </h1>
   <p
-    class="text-4xl sm:text-5xl leading-[46px] md:text-6xl font-serif text-primary font-bold tracking-tighter mb-9"
+    class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
   >
     {specialty}
   </p>
-  <p class="text-neutral font-normal text-base md:text-lg mb-16">
+  <p class="mb-16 text-base font-normal text-neutral md:text-lg">
     {summary}
   </p>
 
   <a
-    class="text-sm py-5 px-8 text-[#fff] inline-block font-medium leading-5 bg-primary rounded-full"
+    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
     href={`mailto:${email}`}>Get in Touch</a
   >
 </section>

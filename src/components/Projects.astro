@@ -17,26 +17,26 @@ const { projects } = Astro.props;
       return (
         <div
           style={`top: ${top}px;`}
-          class="sticky rounded-2xl border border-neutral/20 bg-black mb-12"
+          class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
         >
-          <div class="w-full h-[580px] md:h-96 relative z-[1] bg-[#1c232d]/85 bg-difu before:content-[''] before:rounded-2xl before:absolute before:z-[-1] before:opacity-[5%] before:inset-0 before:bg-[url(/raja.png)] before:bg-repeat before:bg-[length:128px] rounded-2xl grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2">
+          <div class="bg-difu relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
             <div class="px-6 pt-12">
-              <h3 class="text-3xl font-medium font-serif mb-5 text-primary">
+              <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
                 {name}
               </h3>
-              <p class="text-neutral text-base">{summary}</p>
-              <div class="pt-10 flex gap-5 text-white">
+              <p class="text-base text-neutral">{summary}</p>
+              <div class="flex gap-5 pt-10 text-white">
                 <a
                   href={linkSource}
                   target="_blank"
-                  class="hover:underline after:content-[url(/external.svg)] after:relative after:bottom-[-5px]"
+                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
                 >
                   Source
                 </a>
                 <a
                   href={linkPreview}
                   target="_blank"
-                  class="hover:underline after:content-[url(/external.svg)] after:relative after:bottom-[-5px]"
+                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
                 >
                   Preview
                 </a>
@@ -44,7 +44,7 @@ const { projects } = Astro.props;
             </div>
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                class="w-[95%] sm:w-full h-full sm:h-[85%] object-none object-left-top rounded-ss-xl rounded-ee-2xl"
+                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
                 src={image}
                 alt={name}
                 width="736"

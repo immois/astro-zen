@@ -13,21 +13,21 @@ const { experience } = Astro.props;
   {
     experience.map(({ company, position, startDate, endDate, summary }) => (
       <div class="mb-10">
-        <h3 class="text-2xl font-serif font-semibold text-white mb-1.5">
+        <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
           {company}
         </h3>
         <div class="flex flex-col items-start pb-5">
-          <h4 class="text-2xl font-serif text-primary font-medium mb-0.5">
+          <h4 class="mb-0.5 font-serif text-2xl font-medium text-primary">
             {position}
           </h4>
-          <span class="text-sm text-white/70 pb-[2px]">
+          <span class="pb-[2px] text-sm text-white/70">
             {startDate} — {endDate}
           </span>
         </div>
         {Array.isArray(summary) ? (
           <ul class="list-none">
             {summary.map((log) => (
-              <li class="text-base relative text-neutral pl-8 mb-3 before:absolute before:left-0 before:top-1 before:content-[url(/check.svg)]">
+              <li class="relative mb-3 pl-8 text-base text-neutral before:absolute before:top-1 before:left-0 before:content-[url(/check.svg)]">
                 {log}
               </li>
             ))}

@@ -21,7 +21,7 @@ const ogImgUrl = canonicalURL + socialImage;
 ---
 
 <!doctype html>
-<html lang={lang} class="scroll-smooth scroll-pt-16">
+<html lang={lang} class="scroll-pt-16 scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -42,9 +42,9 @@ const ogImgUrl = canonicalURL + socialImage;
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImgUrl} />
   </head>
-  <body class="font-sans bg-black">
+  <body class="bg-black font-sans">
     <Header siteLogo={siteLogo} navLinks={navLinks} />
-    <main class="max-w-3xl px-5 mx-auto">
+    <main class="mx-auto max-w-3xl px-5">
       <slot />
     </main>
     <Footer author={author} socialLinks={socialLinks} />

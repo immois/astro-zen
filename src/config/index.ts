@@ -13,7 +13,6 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
     { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
     { text: "Github", href: "https://github.com/immois/astro-zen" },
     { text: "Youtube", href: "https://github.com/immois/astro-zen" },

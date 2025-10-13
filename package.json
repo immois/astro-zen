@@ -23,5 +23,5 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.18.2"
 }

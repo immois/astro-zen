@@ -1,10 +1,10 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Nicha Wilanan - Full Stack Developer & Data Scientist",
+  author: "Nicha Wilanan",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer specialized in large scale applications and data science.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
   navLinks: [

@@ -13,14 +13,14 @@ const { experience } = Astro.props;
   {
     experience.map(({ company, position, startDate, endDate, summary }) => (
       <div class="mb-10">
-        <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
+        <h3 class="mb-1.5 font-serif text-2xl font-semibold text-black">
           {company}
         </h3>
         <div class="flex flex-col items-start pb-5">
           <h4 class="mb-0.5 font-serif text-2xl font-medium text-primary">
             {position}
           </h4>
-          <span class="pb-[2px] text-sm text-white/70">
+          <span class="pb-[2px] text-sm text-black/70">
             {startDate} — {endDate}
           </span>
         </div>

@@ -1,0 +1,33 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import type { ArticleProps } from "@types";
+
+interface Props {
+  articles: ArticleProps[];
+}
+
+const { articles } = Astro.props;
+---
+
+<Section text="Knowledge Sharing" href="articles">
+  {
+    (
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {articles.map(({ name, summary, image, linkSource }) => (
+          <div class="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl">
+            <a href={linkSource} target="_blank" class="after:relative">
+              <img src={image} alt={name} class="h-48 w-full object-cover" />
+
+              <div class="p-5">
+                <h3 class="mb-2 text-xl font-semibold text-gray-800">{name}</h3>
+
+                <p class="text-gray-600">{summary}</p>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    )
+  }
+</Section>

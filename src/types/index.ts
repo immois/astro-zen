@@ -13,6 +13,7 @@ export interface SiteContent {
   experience: ExperienceProps[];
   projects: ProjectProps[];
   about: AboutProps;
+  articles: ArticleProps[];
 }
 
 export interface HeroProps {
@@ -35,6 +36,13 @@ export interface ProjectProps {
   summary: string;
   image: string;
   linkPreview?: string;
+  linkSource?: string;
+}
+
+export interface ArticleProps {
+  name: string;
+  summary: string;
+  image: string;
   linkSource?: string;
 }
 

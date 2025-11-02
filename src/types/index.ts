@@ -45,5 +45,10 @@ export interface AboutProps {
 
 export interface HeaderProps {
   siteLogo: string;
-  navLinks: { text: string; href: string }[];
+  navLinks: {
+    text: string;
+    href: string;
+    target?: string; // allow opening in new tab
+    rel?: string;    // optional, for security (noopener noreferrer)
+  }[];
 }

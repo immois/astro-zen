@@ -1,8 +1,8 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Jay Halani — Android and Flutter Developer",
+  author: "Jay Halani",
   description:
     "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
   lang: "en",
@@ -11,6 +11,12 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
+    {
+      text: "Resume",
+      href: "https://drive.google.com/file/d/1GpnRepxEiKeHa_Nfmla3xvOn4XjOajG7/view?usp=sharing",
+      target: "_blank",
+      rel: "noopener noreferrer"
+    },
   ],
   socialLinks: [
     { text: "Twitter", href: "https://github.com/immois/astro-zen" },

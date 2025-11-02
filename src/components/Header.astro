@@ -42,6 +42,11 @@ const { siteLogo, navLinks } = Astro.props;
             <a
               class={`nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white`}
               href={link.href}
+              target={link.target || "_self"}
+              rel={
+                link.rel ||
+                (link.target === "_blank" ? "noopener noreferrer" : undefined)
+              }
             >
               {link.text}
             </a>

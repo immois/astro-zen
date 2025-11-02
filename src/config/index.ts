@@ -6,7 +6,7 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/jayhalani-small.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
@@ -25,11 +25,11 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Jay Halani",
+    specialty: "Android and Flutter Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Senior Android and Flutter Developer with 7+ years of experience building high-performance, cross-platform apps with clean architecture and responsive design.",
+    email: "jayhalani.work@gmail.com",
   },
   experience: [
     {
@@ -87,11 +87,12 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Hi, I’m Jay Halani — a Senior Android and Flutter Developer with over 7 years of experience building fast, scalable, and intuitive mobile apps. 
+      I specialize in crafting seamless cross-platform experiences using Android (Kotlin/Java) and Flutter. 
+      My work blends performance, usability, and clean architecture — from robust mobile backends to pixel-perfect, responsive UIs. 
+      I’m passionate about turning ideas into reliable, high-impact digital products that deliver real value and scale beautifully across devices.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/jayhalani-big.png",
   },
 };
 

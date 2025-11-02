@@ -39,33 +39,51 @@ export const SITE_CONTENT: SiteContent = {
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Techabbot",
+      position: "Sr. Anroid & Flutter Developer",
+      startDate: "Apr 2023",
+      endDate: "May 2025",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Led the end-to-end development of multiple Flutter apps with optimized performance and smooth user experience.",
+        "Migrated legacy Android apps to Flutter, enhancing cross-platform support and reducing maintenance efforts.",
+        "Collaborated with cross-functional teams to deliver customized app solutions for warehouse management, logistics, and smart key synchronization.",
+        "Sole decision-maker on tech stack, architecture, and component strategy; established code review practices and mentored a growing frontend team.",
+        "Translated product ideas into clean, performant, and extensible UI solutions in collaboration with design, product, and backend teams.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Hyperlink Infosystem",
+      position: "Sr. Android Developer",
+      startDate: "Nov 2021",
+      endDate: "Jan 2023",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Developed Android apps focusing on clean architecture (MVVM) and API integrations.",
+        "Built scalable features including Google Maps, location tracking, social feeds, and custom workflows.",
+        "Ensured app stability and crash resilience by leveraging Firebase Crashlytics.",
+        "Worked closely with UI/UX to translate wireframes into highly functional, user-centric interfaces."
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "Arvaan Technolab",
+      position: "Sr. Android Developer",
+      startDate: "Oct 2019",
+      endDate: "Nov 2021",
+      summary: [
+        "Developed Android apps for health tracking, order management, and logistics with a focus on clean UI and offline-first capabilities.",
+        "Implemented local storage solutions using SQLite and Room, and followed modular architecture practices.",
+        "Contributed to all stages of the app lifecycle — from requirements to deployment and maintenance."
+      ],
+    },
+    {
+      company: "MyCom",
+      position: "Android Developer",
+      startDate: "Oct 2017",
+      endDate: "Aug 2018",
+      summary: [
+        "Assisted in Android app development, focusing on UI design, basic architecture, and code optimization.",
+        "Prepared tech stacks and architectural guidelines for new projects.",
+        "Supported product lifecycle from requirement gathering to deployment and bug-fixes."
+      ],
     },
   ],
   projects: [

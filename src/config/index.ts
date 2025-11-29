@@ -23,7 +23,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "LinkedIn", href: "https://linkedin.com/in/jayhalani" },
     { text: "Twitter", href: "https://x.com/jayrhalani" },
   ],
-  socialImage: "/zen-og.png",
+  socialImage: "/zen-og.png-v2",
   canonicalURL: "https://astro-zen.vercel.app",
 };
 

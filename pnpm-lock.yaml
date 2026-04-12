@@ -11,12 +11,6 @@ importers:
       '@astrojs/check':
         specifier: 0.9.8
         version: 0.9.8(prettier-plugin-astro@0.14.1)(prettier@3.7.4)(typescript@5.9.3)
-      '@fontsource-variable/gabarito':
-        specifier: ^5.1.0
-        version: 5.2.8
-      '@fontsource/be-vietnam-pro':
-        specifier: ^5.1.0
-        version: 5.2.8
       '@tailwindcss/vite':
         specifier: 4.2.2
         version: 4.2.2(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.2))
@@ -292,12 +286,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@fontsource-variable/gabarito@5.2.8':
-    resolution: {integrity: sha512-wIAwvNwzfoYMm4iisswaUYgCxDWFe6JdKDL1gjgUjYe7LU1u/zjGekEigJgkabvMgZbWyJjkRNCb2gJlcMxvpg==}
-
-  '@fontsource/be-vietnam-pro@5.2.8':
-    resolution: {integrity: sha512-lqTtfpkAy0GdFH0fqwR0sW4VP+3CNGaQV6SpW2TSZaNmixZMlou+2dp5ErGidrS1MPiDDPfPbfW2i358PVFLZA==}
 
   '@img/colour@1.0.0':
     resolution: {integrity: sha512-A5P/LfWGFSl6nsckYtjw9da+19jB8hkJ6ACTGcDfEJ0aE+l2n2El7dsVM7UVHZQ9s2lmYMWlrS21YLy2IR1LUw==}
@@ -2219,10 +2207,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.7':
     optional: true
-
-  '@fontsource-variable/gabarito@5.2.8': {}
-
-  '@fontsource/be-vietnam-pro@5.2.8': {}
 
   '@img/colour@1.0.0':
     optional: true

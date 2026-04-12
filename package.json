@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.8",
-    "@fontsource-variable/gabarito": "^5.1.0",
-    "@fontsource/be-vietnam-pro": "^5.1.0",
     "@tailwindcss/vite": "4.2.2",
     "astro": "6.1.5",
     "tailwindcss": "4.2.2",

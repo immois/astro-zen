@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
-  --font-serif: "Gabarito Variable", ui-serif, serif;
+@theme inline {
+  --font-sans: var(--font-be-vietnam-pro);
+  --font-serif: var(--font-gabarito);
 
   --color-primary: #2563eb;
   --color-neutral: #94a3b8;

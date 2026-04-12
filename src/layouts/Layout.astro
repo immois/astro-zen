@@ -1,7 +1,6 @@
 ---
 import Header from "@components/Header.astro";
-import "@fontsource/be-vietnam-pro";
-import "@fontsource-variable/gabarito";
+import { Font } from "astro:assets";
 import { SITE_CONFIG } from "@config";
 import Footer from "@components/Footer.astro";
 
@@ -30,6 +29,9 @@ const ogImgUrl = canonicalURL + socialImage;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <Font cssVariable="--font-gabarito" preload />
+    <Font cssVariable="--font-be-vietnam-pro" preload />
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
